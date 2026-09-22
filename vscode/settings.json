@@ -1,0 +1,91 @@
+{
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.fontSize": 13,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Dark+",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1e1e1e",
+        "statusBar.foreground": "#A0A0A0",
+        "statusBar.border": "#2B2B2B"
+    },
+
+    // Vim
+    "vim.useSystemClipboard": true,
+
+    // Latex Workshop
+    "latex-workshop.latex.recipe.default": "latexmk",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-f",
+                "-pdf",
+                "-outdir=%OUTDIR%", 
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.outDir": "./build",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#2d2d2d",
+    "latex-workshop.view.pdf.color.light.backgroundColor": "#f3f3f3",
+    "latex-workshop.view.pdf.color.dark.pageBorderColor": "#2d2d2d",
+    "latex-workshop.view.pdf.color.light.pageBorderColor": "#f3f3f3",
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    "latex-workshop.latex.autoClean.run": "never",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.showContextMenu": true,
+
+    // Paste Image
+    "pasteImage.path": "${currentFileDir}/figures",
+    "pasteImage.basePath": "${currentFileDir}",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+    "pasteImage.insertPattern": "\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=0.8\\linewidth]{${imageFilePath}}\n\t\\caption{}\n\t\\label{fig:${imageFileNameWithoutExt}}\n\\end{figure}\n",
+
+    // LTeX+
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.diagnosticSeverity": {
+       "default": "information", 
+       "MORFOLOGIK_RULE_EN_US": "warning", // Spelling errors
+       "PASSIVE_VOICE": "hint",
+       "ENGLISH_WORD_REPEAT_BEGINNING_RULE": "hint",
+       "TOO_LONG_SENTENCE": "hint"
+    },
+
+    "workbench.navigationControl.enabled": false,
+    "workbench.experimental.modernUI": false,
+    "window.commandCenter": false
+}

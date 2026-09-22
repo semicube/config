@@ -1,0 +1,13 @@
+*~
+.DS_Store
+.localized
+
+.vim/undo/*
+!.vim/undo/.gitkeep
+
+.vim/swaps/*
+!.vim/swaps/.gitkeep
+
+.vim/viminfo
+
+.gitconfig.local

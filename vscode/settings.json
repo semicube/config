@@ -22,7 +22,9 @@
     "workbench.colorCustomizations": {
         "statusBar.background": "#1e1e1e",
         "statusBar.foreground": "#A0A0A0",
-        "statusBar.border": "#2B2B2B"
+        "statusBar.border": "#2B2B2B",
+        "statusBar.inactiveBackground": "#1e1e1e",
+        "statusBar.inactiveForeground": "#A0A0A0"
     },
 
     // Vim
